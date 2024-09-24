@@ -1,0 +1,38 @@
+﻿-- Calculation1
+
+EVALUATE
+ADDCOLUMNS (
+    SELECTCOLUMNS (
+        FILTER ( 'Product', 'Product'[Color] = "Red" ),
+        'Product'[Product Name],
+        'Product'[Brand],
+        'Product'[Color]
+    ),
+    "TotalSales", IF ( ISBLANK ( [SalesAmount] ), 0, [SalesAmount] ),
+    "RedSales", [RedProductSales]
+)
+-- Calculation2
+
+EVALUATE
+ADDCOLUMNS (
+    SELECTCOLUMNS (
+        'Product',
+        'Product'[Product Name],
+        'Product'[Brand],
+        'Product'[Color]
+    ),
+    "TotalSales", IF ( ISBLANK ( [SalesAmount] ), 0, [SalesAmount] ),
+    "RedSales", [RedProductSales]
+)
+ORDER BY
+    'Product'[Color] ASC,
+    'Product'[Brand] ASC
+-- Calculation3
+
+EVALUATE
+ADDCOLUMNS (
+    FILTER ( 'Product', 'Product'[Brand] = "Contoso" && 'Product'[Color] = "Red" ),
+    "Sales Amout", [SalesAmount],
+    "Red Sales Amount", [RedProductSales],
+    "All Sales Amount", [AllSales]
+)

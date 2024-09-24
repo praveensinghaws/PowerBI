@@ -1,0 +1,38 @@
+﻿EVALUATE
+ADDCOLUMNS (
+    Product_Lookup,
+    "Price < Same Rows",
+        COUNTROWS (
+            FILTER (
+                Product_Lookup,
+                Product_Lookup[Final_Price] < EARLIER ( Product_Lookup[Final_Price] )
+            )
+        ),
+    "Price > Same Rows",
+        COUNTROWS (
+            FILTER (
+                Product_Lookup,
+                Product_Lookup[Final_Price] > EARLIER ( Product_Lookup[Final_Price] )
+            )
+        ),
+    "Price < Same Rows EARLIEST",
+        COUNTROWS (
+            FILTER (
+                Product_Lookup,
+                Product_Lookup[Final_Price] < EARLIEST ( Product_Lookup[Final_Price] )
+            )
+        ),
+    "Price > Same Rows EARLIEST",
+        COUNTROWS (
+            FILTER (
+                Product_Lookup,
+                Product_Lookup[Final_Price] > EARLIEST ( Product_Lookup[Final_Price] )
+            )
+        ),
+    "Price < Same Rows USING VARIABLE",
+        VAR CurrentProductCost = Product_Lookup[Final_Price]
+        RETURN
+            COUNTROWS (
+                FILTER ( Product_Lookup, Product_Lookup[Final_Price] < CurrentProductCost )
+            )
+)

@@ -1,0 +1,97 @@
+{
+  "FileFormatVersion": 3,
+  "PhysicalQueryPlanRows": [
+    {
+      "Records": null,
+      "Operation": "AddColumns: IterPhyOp LogOp=SelectColumns IterCols(0, 1)(''[Color], ''[])",
+      "IndentedOperation": "AddColumns: IterPhyOp LogOp=SelectColumns IterCols(0, 1)(''[Color], ''[])",
+      "Level": 0,
+      "RowNumber": 1,
+      "NextSiblingRowNumber": 7,
+      "HighlightRow": false
+    },
+    {
+      "Records": 16,
+      "Operation": "Spool_Iterator<SpoolIterator>: IterPhyOp LogOp=Scan_Vertipaq IterCols(0)('Product'[Color]) #Records=16 #KeyCols=107 #ValueCols=0",
+      "IndentedOperation": "    Spool_Iterator<SpoolIterator>: IterPhyOp LogOp=Scan_Vertipaq IterCols(0)('Product'[Color]) #Records=16 #KeyCols=107 #ValueCols=0",
+      "Level": 1,
+      "RowNumber": 2,
+      "NextSiblingRowNumber": 5,
+      "HighlightRow": false
+    },
+    {
+      "Records": 16,
+      "Operation": "ProjectionSpool<ProjectFusion<>>: SpoolPhyOp #Records=16",
+      "IndentedOperation": "        ProjectionSpool<ProjectFusion<>>: SpoolPhyOp #Records=16",
+      "Level": 2,
+      "RowNumber": 3,
+      "NextSiblingRowNumber": 5,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Cache: IterPhyOp #FieldCols=1 #ValueCols=0",
+      "IndentedOperation": "            Cache: IterPhyOp #FieldCols=1 #ValueCols=0",
+      "Level": 3,
+      "RowNumber": 4,
+      "NextSiblingRowNumber": 4,
+      "HighlightRow": true
+    },
+    {
+      "Records": null,
+      "Operation": "UPPER: LookupPhyOp LogOp=UPPER LookupCols(0)('Product'[Color]) String",
+      "IndentedOperation": "    UPPER: LookupPhyOp LogOp=UPPER LookupCols(0)('Product'[Color]) String",
+      "Level": 1,
+      "RowNumber": 5,
+      "NextSiblingRowNumber": 7,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<'Product'[Color]>: LookupPhyOp LogOp=ColValue<'Product'[Color]>'Product'[Color] LookupCols(0)('Product'[Color]) String",
+      "IndentedOperation": "        ColValue<'Product'[Color]>: LookupPhyOp LogOp=ColValue<'Product'[Color]>'Product'[Color] LookupCols(0)('Product'[Color]) String",
+      "Level": 2,
+      "RowNumber": 6,
+      "NextSiblingRowNumber": 7,
+      "HighlightRow": false
+    }
+  ],
+  "LogicalQueryPlanRows": [
+    {
+      "Operation": "SelectColumns: RelLogOp DependOnCols()() 0-1 RequiredCols(0, 1)(''[Color], ''[])",
+      "IndentedOperation": "SelectColumns: RelLogOp DependOnCols()() 0-1 RequiredCols(0, 1)(''[Color], ''[])",
+      "Level": 0,
+      "RowNumber": 1,
+      "NextSiblingRowNumber": 5,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "Scan_Vertipaq: RelLogOp DependOnCols()() 0-0 RequiredCols(0)('Product'[Color])",
+      "IndentedOperation": "    Scan_Vertipaq: RelLogOp DependOnCols()() 0-0 RequiredCols(0)('Product'[Color])",
+      "Level": 1,
+      "RowNumber": 2,
+      "NextSiblingRowNumber": 2,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "UPPER: ScaLogOp DependOnCols(0)('Product'[Color]) String DominantValue=NONE",
+      "IndentedOperation": "    UPPER: ScaLogOp DependOnCols(0)('Product'[Color]) String DominantValue=NONE",
+      "Level": 1,
+      "RowNumber": 3,
+      "NextSiblingRowNumber": 5,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "'Product'[Color]: ScaLogOp DependOnCols(0)('Product'[Color]) String DominantValue=NONE",
+      "IndentedOperation": "        'Product'[Color]: ScaLogOp DependOnCols(0)('Product'[Color]) String DominantValue=NONE",
+      "Level": 2,
+      "RowNumber": 4,
+      "NextSiblingRowNumber": 5,
+      "HighlightRow": false
+    }
+  ],
+  "ActivityID": "D62C2D2A-9255-4BCC-A1EB-110AEE6A5809",
+  "CommandText": "EVALUATE\nSELECTCOLUMNS(\nDISTINCT('Product'[Color]),\n\"Color\", UPPER('Product'[Color]))",
+  "Parameters": null,
+  "StartDatetime": "2024-06-26T00:31:42.536667+05:30"
+}

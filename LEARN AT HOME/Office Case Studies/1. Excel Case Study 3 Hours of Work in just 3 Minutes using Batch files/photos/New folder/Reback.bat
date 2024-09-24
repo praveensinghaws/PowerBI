@@ -1,0 +1,7 @@
+REN	"AAA-A (1).JPG"	"A (1).JPG"
+REN	"AAA-A (2).JPG"	"A (2).JPG"
+REN	"AAA-A (4).JPG"	"A (4).JPG"
+REN	"AAA-A (5).JPG"	"A (5).JPG"
+REN	"AAA-A (7).JPG"	"A (7).JPG"
+REN	"AAA-A (8).JPG"	"A (8).JPG"
+REN	"AAA-A (10).JPG" "A (10).JPG"

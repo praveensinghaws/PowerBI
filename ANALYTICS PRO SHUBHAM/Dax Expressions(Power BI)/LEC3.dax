@@ -1,0 +1,20 @@
+﻿EVALUATE
+ROW(
+    "Avg", AVERAGE( SalesNewTB[AMT] ),
+    "AvgA", AVERAGEA( SalesNewTB[AMT] ),
+    "AvgABool", AVERAGEA( SalesNewTB[BOOLEAN VALUES] ),
+    "MaxAmt", MAX( SalesNewTB[AMT] ),
+    "MaxAAmt", MAXA( SalesNewTB[AMT] ),
+    "MaxABool", MAXA( SalesNewTB[BOOLEAN VALUES] )
+)
+
+EVALUATE
+SUMMARIZE(
+    SalesNewTB,
+    "Avg", AVERAGE(SalesNewTB[AMT]),
+    "AvgA", AVERAGEA(SalesNewTB[AMT]),
+    "AvgABool", AVERAGEA(SalesNewTB[BOOLEAN VALUES]),
+    "MaxAmt", MAX(SalesNewTB[AMT]),
+    "MaxAAmt", MAXA(SalesNewTB[AMT]),
+    "MaxABool", MAXA(SalesNewTB[BOOLEAN VALUES])
+)

@@ -1,0 +1,14 @@
+﻿EVALUATE
+SUMMARIZECOLUMNS (
+    ROLLUPADDISSUBTOTAL (
+        'Date'[Calendar Year Number],
+        "IsYearTotal",
+        'Product'[Brand],
+        "IsBrandTotal"
+    ),
+    TREATAS ( { 2007, 2008, 2009 }, 'Date'[Calendar Year Number] ),
+    "Sales", [SalesAmount]
+)
+ORDER BY
+    'Date'[Calendar Year Number],
+    'Product'[Brand]

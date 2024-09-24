@@ -1,0 +1,10 @@
+Q. What are deployment pipelines in Power BI? Have you used it? How you change the connection in each environment?
+Q. What is difference between contributor and member?
+Q. If I want to provide access for report not for entire workspace can I do it and if yes then how can I do it?
+Q. What is Incremental Refresh and limitations of it?
+Q. Can you tell me what are latest update in Power BI? You can tell me one or Two?
+Q. How you can configure field parameter?
+Q. How can I create date table with the help of Dax?
+Q. Once the date table is created I need a new column which will have give me Day name, can you tell me the dax?
+Q. I have a requirement where I have to use Inactive relationship, how can use it?
+Q. What is Crossfilter direction? And how many types of cross filter direction available in Power BI?

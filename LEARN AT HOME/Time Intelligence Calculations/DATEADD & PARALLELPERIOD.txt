@@ -1,0 +1,19 @@
+-- Define a variable for the date table within the specified date range
+DEFINE
+    VAR _date_table = DATESBETWEEN('Date'[Date], DATE(2008, 05, 01), DATE(2009, 10, 31))
+
+-- Evaluate and shift the dates in the date table back by one year using DATEADD function
+EVALUATE
+    DATEADD(_date_table, -1, YEAR)
+
+-- Evaluate and shift the dates in the date table back by one year using PARALLELPERIOD function
+EVALUATE
+    PARALLELPERIOD(_date_table, -1, YEAR)
+
+-- Evaluate and shift the dates in the date table back by one month using DATEADD function
+EVALUATE
+    DATEADD(_date_table, -1, MONTH)
+
+-- Evaluate and shift the dates in the date table back by one month using PARALLELPERIOD function
+EVALUATE
+    PARALLELPERIOD(_date_table, -1, MONTH)

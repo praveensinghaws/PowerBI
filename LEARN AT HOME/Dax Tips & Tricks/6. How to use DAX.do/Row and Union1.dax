@@ -1,0 +1,18 @@
+﻿EVALUATE
+UNION (
+    ROW (
+        "SalesQty", SUMX ( Sales, Sales[Quantity] ),
+        "Total Sales", ROUND([SalesAmount], 2),
+        "Random", RANDBETWEEN (1234, 9999),
+        "Mobile", "9876543210",
+        "Max Qty Sold", MAXX(Sales, Sales[Quantity])
+    ),
+    ROW (
+        "SalesQty", SUMX ( Sales, Sales[Quantity] ),
+        "Total Sales", ROUND([SalesAmount], 2),
+        "Random", RANDBETWEEN (1234, 9999),
+        "Mobile", "9876543210",
+        "Min Qty Sold", MINX(Sales, Sales[Quantity])
+    )
+)
+

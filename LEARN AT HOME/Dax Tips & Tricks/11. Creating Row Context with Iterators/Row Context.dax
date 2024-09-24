@@ -1,0 +1,18 @@
+﻿EVALUATE
+ADDCOLUMNS (
+    Sales_Data,
+    "TotalSales",
+        CALCULATE (
+            SUMX (
+                Sales_Data,
+                Sales_Data[Sales_Quantity] * RELATED ( Product_Lookup[Final_Price] )
+            )
+        )
+)
+
+EVALUATE
+SUMMARIZE (
+    Sales_Data,
+    Sales_Data[Product_ID],
+    "Total Qty", SUM ( Sales_Data[Sales_Quantity] )
+)

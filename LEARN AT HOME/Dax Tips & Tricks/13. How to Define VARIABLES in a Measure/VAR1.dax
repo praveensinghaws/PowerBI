@@ -1,0 +1,12 @@
+﻿EVALUATE
+{
+    VAR a = 20
+    VAR b = 30
+    VAR c = 35
+    VAR s = 60
+    VAR Result =
+       SQRT ( s * ( s - a ) * ( s - b ) * ( s - c ) )
+       
+    RETURN
+        Result
+}

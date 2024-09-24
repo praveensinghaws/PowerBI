@@ -1,0 +1,11 @@
+﻿EVALUATE
+ADDCOLUMNS (
+    CALENDAR ( MIN ( sales[Order Date] ), MAX ( sales[Order Date] ) ),
+    "Year", YEAR ( [Date] ),
+    "Qtr", FORMAT ( [Date], "\QQ" ),
+    "Month", FORMAT ( [Date], "MMM" ),
+    "DayName", FORMAT ( [Date], "DDDD" ),
+    "WeekDayNumber", WEEKDAY ( [Date], 2 ),
+    "WeekNumber", WEEKNUM ( [Date] )
+)
+ORDER BY [date] ASC

@@ -1,0 +1,6 @@
+﻿EVALUATE
+ADDCOLUMNS (
+    'Product',
+    "SALES", [SalesAmount],
+    "Qty", CALCULATE ( SUM ( sales[Quantity] ) )
+)

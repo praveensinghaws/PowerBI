@@ -1,0 +1,88 @@
+﻿EVALUATE
+SUMMARIZE(
+    'Product',
+    'Product'[Color],
+    "Top 5 By ProductColor 1",
+        CALCULATE(
+            [TotalProfit],
+            FILTER(
+                VALUES( 'Product'[Color] ),
+                RANKX(
+                    ALL( 'Product'[Color] ),
+                    [TotalProfit],
+                    ,
+                    DESC,
+                    DENSE
+                ) <= 5
+            )
+        ),
+    "Top 5 By ProductColor 2",
+        CALCULATE(
+            [TotalProfit],
+            TOPN(
+                5,
+                VALUES( 'Product'[Color] ),
+                [TotalProfit], DESC
+            ),
+            KEEPFILTERS( 'Product' )
+        ),
+    "Top 5 By ProductColor 3",
+        CALCULATE(
+            [TotalProfit],
+            FILTER(
+                'Product',
+                'Product'[Color]
+                    IN SELECTCOLUMNS(
+                        TOPN(
+                            5,
+                            SUMMARIZE(
+                                'Product',
+                                'Product'[Color],
+                                "TotalProfit", [TotalProfit]
+                            ),
+                            [TotalProfit], DESC
+                        ),
+                        'Product'[Color]
+                    )
+            )
+        ),
+    "Top 5 By ProductColor 4",
+        CALCULATE(
+            [TotalProfit],
+            KEEPFILTERS(
+                TOPN(
+                    5,
+                    VALUES( 'Product'[Color] ),
+                    [TotalProfit], DESC
+                )
+            )
+        ),
+    "Top 5 By ProductColor 5",
+        VAR TopColorsTable =
+            TOPN(
+                5,
+                SUMMARIZE(
+                    ALL( 'Product' ),
+                    'Product'[Color],
+                    "TotalProfit", [TotalProfit]
+                ),
+                [TotalProfit], DESC
+            )
+        RETURN
+            CALCULATE(
+                [TotalProfit],
+                FILTER(
+                    'Product',
+                    CONTAINS(
+                        TopColorsTable,
+                        'Product'[Color], 'Product'[Color]
+                    )
+                )
+            ),
+    "TotalProfit",
+        SUMX(
+            Sales,
+            ( Sales[Net Price] - Sales[Unit Cost] ) * Sales[Quantity]
+        )
+)
+ORDER BY [TotalProfit] DESC

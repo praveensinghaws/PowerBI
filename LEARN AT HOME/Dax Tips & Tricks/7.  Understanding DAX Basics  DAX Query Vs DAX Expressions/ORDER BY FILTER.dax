@@ -1,0 +1,16 @@
+﻿EVALUATE
+'Product'
+ORDER BY
+    'Product'[ProductKey] DESC,
+    'Product'[Brand] DESC
+
+EVALUATE
+FILTER (
+    'Product',
+    AND ( 'Product'[Color] = "Red", 'Product'[Brand] = "Contoso" )
+)
+ORDER BY
+    'Product'[Color] DESC,
+    'Product'[Brand] ASC
+
+

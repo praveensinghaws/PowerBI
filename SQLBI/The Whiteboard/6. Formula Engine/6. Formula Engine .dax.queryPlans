@@ -1,0 +1,458 @@
+{
+  "FileFormatVersion": 3,
+  "PhysicalQueryPlanRows": [
+    {
+      "Records": null,
+      "Operation": "PartitionIntoGroups: IterPhyOp LogOp=Order IterCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter]) #Groups=1 #Rows=12",
+      "IndentedOperation": "PartitionIntoGroups: IterPhyOp LogOp=Order IterCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter]) #Groups=1 #Rows=12",
+      "Level": 0,
+      "RowNumber": 1,
+      "NextSiblingRowNumber": 32,
+      "HighlightRow": false
+    },
+    {
+      "Records": 1,
+      "Operation": "AggregationSpool<Order>: SpoolPhyOp #Records=1",
+      "IndentedOperation": "    AggregationSpool<Order>: SpoolPhyOp #Records=1",
+      "Level": 1,
+      "RowNumber": 2,
+      "NextSiblingRowNumber": 32,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Proxy: IterPhyOp LogOp=TableVarProxy IterCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "IndentedOperation": "        Proxy: IterPhyOp LogOp=TableVarProxy IterCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "Level": 2,
+      "RowNumber": 3,
+      "NextSiblingRowNumber": 30,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "AddColumns: IterPhyOp LogOp=AddColumns IterCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "IndentedOperation": "            AddColumns: IterPhyOp LogOp=AddColumns IterCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "Level": 3,
+      "RowNumber": 4,
+      "NextSiblingRowNumber": 30,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Proxy: IterPhyOp LogOp=TableVarProxy IterCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "IndentedOperation": "                Proxy: IterPhyOp LogOp=TableVarProxy IterCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "Level": 4,
+      "RowNumber": 5,
+      "NextSiblingRowNumber": 26,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ApplyRemap: IterPhyOp LogOp=CrossApply IterCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "IndentedOperation": "                    ApplyRemap: IterPhyOp LogOp=CrossApply IterCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "Level": 5,
+      "RowNumber": 6,
+      "NextSiblingRowNumber": 26,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "CrossApply: IterPhyOp LogOp=CrossApply IterCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "IndentedOperation": "                        CrossApply: IterPhyOp LogOp=CrossApply IterCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "Level": 6,
+      "RowNumber": 7,
+      "NextSiblingRowNumber": 26,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Proxy: IterPhyOp LogOp=TableVarProxy LookupCols(0)(''[Name]) IterCols(1)(''[])",
+      "IndentedOperation": "                            Proxy: IterPhyOp LogOp=TableVarProxy LookupCols(0)(''[Name]) IterCols(1)(''[])",
+      "Level": 7,
+      "RowNumber": 8,
+      "NextSiblingRowNumber": 14,
+      "HighlightRow": false
+    },
+    {
+      "Records": 2,
+      "Operation": "Spool_MultiValuedHashLookup: IterPhyOp LogOp=SelectColumns LookupCols(0)(''[Name]) IterCols(1)(''[]) #Records=2 #KeyCols=2 #ValueCols=0",
+      "IndentedOperation": "                                Spool_MultiValuedHashLookup: IterPhyOp LogOp=SelectColumns LookupCols(0)(''[Name]) IterCols(1)(''[]) #Records=2 #KeyCols=2 #ValueCols=0",
+      "Level": 8,
+      "RowNumber": 9,
+      "NextSiblingRowNumber": 14,
+      "HighlightRow": false
+    },
+    {
+      "Records": 2,
+      "Operation": "AggregationSpool<GroupBy>: SpoolPhyOp #Records=2",
+      "IndentedOperation": "                                    AggregationSpool<GroupBy>: SpoolPhyOp #Records=2",
+      "Level": 9,
+      "RowNumber": 10,
+      "NextSiblingRowNumber": 14,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "AddColumns: IterPhyOp LogOp=SelectColumns IterCols(0, 1)(''[Name], ''[])",
+      "IndentedOperation": "                                        AddColumns: IterPhyOp LogOp=SelectColumns IterCols(0, 1)(''[Name], ''[])",
+      "Level": 10,
+      "RowNumber": 11,
+      "NextSiblingRowNumber": 14,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "TableCtor: IterPhyOp LogOp=TableCtor IterCols(0, 1)(''[Value], ''[])",
+      "IndentedOperation": "                                            TableCtor: IterPhyOp LogOp=TableCtor IterCols(0, 1)(''[Value], ''[])",
+      "Level": 11,
+      "RowNumber": 12,
+      "NextSiblingRowNumber": 12,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(0)(''[Value]) String",
+      "IndentedOperation": "                                            ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(0)(''[Value]) String",
+      "Level": 11,
+      "RowNumber": 13,
+      "NextSiblingRowNumber": 13,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "GenerateSeries: IterPhyOp LogOp=GENERATESERIES IterCols(0, 2)(''[Name], ''[Value])",
+      "IndentedOperation": "                            GenerateSeries: IterPhyOp LogOp=GENERATESERIES IterCols(0, 2)(''[Name], ''[Value])",
+      "Level": 7,
+      "RowNumber": 14,
+      "NextSiblingRowNumber": 26,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Extend_Lookup: IterPhyOp LogOp=Constant",
+      "IndentedOperation": "                                Extend_Lookup: IterPhyOp LogOp=Constant",
+      "Level": 8,
+      "RowNumber": 15,
+      "NextSiblingRowNumber": 23,
+      "HighlightRow": false
+    },
+    {
+      "Records": 2,
+      "Operation": "Spool_Iterator<SpoolIterator>: IterPhyOp LogOp=TableVarProxy IterCols(0)(''[Name]) #Records=2 #KeyCols=1 #ValueCols=0",
+      "IndentedOperation": "                                    Spool_Iterator<SpoolIterator>: IterPhyOp LogOp=TableVarProxy IterCols(0)(''[Name]) #Records=2 #KeyCols=1 #ValueCols=0",
+      "Level": 9,
+      "RowNumber": 16,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    },
+    {
+      "Records": 2,
+      "Operation": "AggregationSpool<GroupBy>: SpoolPhyOp #Records=2",
+      "IndentedOperation": "                                        AggregationSpool<GroupBy>: SpoolPhyOp #Records=2",
+      "Level": 10,
+      "RowNumber": 17,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Proxy: IterPhyOp LogOp=TableVarProxy IterCols(0, 1)(''[Name], ''[])",
+      "IndentedOperation": "                                            Proxy: IterPhyOp LogOp=TableVarProxy IterCols(0, 1)(''[Name], ''[])",
+      "Level": 11,
+      "RowNumber": 18,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "AddColumns: IterPhyOp LogOp=SelectColumns IterCols(0, 1)(''[Name], ''[])",
+      "IndentedOperation": "                                                AddColumns: IterPhyOp LogOp=SelectColumns IterCols(0, 1)(''[Name], ''[])",
+      "Level": 12,
+      "RowNumber": 19,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "TableCtor: IterPhyOp LogOp=TableCtor IterCols(0, 1)(''[Value], ''[])",
+      "IndentedOperation": "                                                    TableCtor: IterPhyOp LogOp=TableCtor IterCols(0, 1)(''[Value], ''[])",
+      "Level": 13,
+      "RowNumber": 20,
+      "NextSiblingRowNumber": 20,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(0)(''[Value]) String",
+      "IndentedOperation": "                                                    ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(0)(''[Value]) String",
+      "Level": 13,
+      "RowNumber": 21,
+      "NextSiblingRowNumber": 21,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Constant: LookupPhyOp LogOp=Constant Integer 1",
+      "IndentedOperation": "                                    Constant: LookupPhyOp LogOp=Constant Integer 1",
+      "Level": 9,
+      "RowNumber": 22,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "LEN: LookupPhyOp LogOp=LEN LookupCols(0)(''[Name]) Integer",
+      "IndentedOperation": "                                LEN: LookupPhyOp LogOp=LEN LookupCols(0)(''[Name]) Integer",
+      "Level": 8,
+      "RowNumber": 23,
+      "NextSiblingRowNumber": 25,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Name]>: LookupPhyOp LogOp=ColValue<''[Name]>''[Name] LookupCols(0)(''[Name]) String",
+      "IndentedOperation": "                                    ColValue<''[Name]>: LookupPhyOp LogOp=ColValue<''[Name]>''[Name] LookupCols(0)(''[Name]) String",
+      "Level": 9,
+      "RowNumber": 24,
+      "NextSiblingRowNumber": 24,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Constant: LookupPhyOp LogOp=Constant Integer 1",
+      "IndentedOperation": "                                Constant: LookupPhyOp LogOp=Constant Integer 1",
+      "Level": 8,
+      "RowNumber": 25,
+      "NextSiblingRowNumber": 25,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "MID: LookupPhyOp LogOp=MID LookupCols(0, 2)(''[Name], ''[Value]) String",
+      "IndentedOperation": "                MID: LookupPhyOp LogOp=MID LookupCols(0, 2)(''[Name], ''[Value]) String",
+      "Level": 4,
+      "RowNumber": 26,
+      "NextSiblingRowNumber": 30,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Name]>: LookupPhyOp LogOp=ColValue<''[Name]>''[Name] LookupCols(0)(''[Name]) String",
+      "IndentedOperation": "                    ColValue<''[Name]>: LookupPhyOp LogOp=ColValue<''[Name]>''[Name] LookupCols(0)(''[Name]) String",
+      "Level": 5,
+      "RowNumber": 27,
+      "NextSiblingRowNumber": 27,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(2)(''[Value]) Integer",
+      "IndentedOperation": "                    ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(2)(''[Value]) Integer",
+      "Level": 5,
+      "RowNumber": 28,
+      "NextSiblingRowNumber": 28,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "Constant: LookupPhyOp LogOp=Constant Integer 1",
+      "IndentedOperation": "                    Constant: LookupPhyOp LogOp=Constant Integer 1",
+      "Level": 5,
+      "RowNumber": 29,
+      "NextSiblingRowNumber": 29,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Name]>: LookupPhyOp LogOp=ColValue<''[Name]>''[Name] LookupCols(0)(''[Name]) String",
+      "IndentedOperation": "        ColValue<''[Name]>: LookupPhyOp LogOp=ColValue<''[Name]>''[Name] LookupCols(0)(''[Name]) String",
+      "Level": 2,
+      "RowNumber": 30,
+      "NextSiblingRowNumber": 30,
+      "HighlightRow": false
+    },
+    {
+      "Records": null,
+      "Operation": "ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(2)(''[Value]) Integer",
+      "IndentedOperation": "        ColValue<''[Value]>: LookupPhyOp LogOp=ColValue<''[Value]>''[Value] LookupCols(2)(''[Value]) Integer",
+      "Level": 2,
+      "RowNumber": 31,
+      "NextSiblingRowNumber": 32,
+      "HighlightRow": false
+    }
+  ],
+  "LogicalQueryPlanRows": [
+    {
+      "Operation": "Order: RelLogOp DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "IndentedOperation": "Order: RelLogOp DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "Level": 0,
+      "RowNumber": 1,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "VarScope: RelLogOp DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "IndentedOperation": "    VarScope: RelLogOp DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "Level": 1,
+      "RowNumber": 2,
+      "NextSiblingRowNumber": 20,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "SelectColumns: RelLogOp VarName=Names DependOnCols()() 0-1 RequiredCols(0, 1)(''[Name], ''[])",
+      "IndentedOperation": "        SelectColumns: RelLogOp VarName=Names DependOnCols()() 0-1 RequiredCols(0, 1)(''[Name], ''[])",
+      "Level": 2,
+      "RowNumber": 3,
+      "NextSiblingRowNumber": 6,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "TableCtor: RelLogOp DependOnCols()() 0-1 RequiredCols(0, 1)(''[Value], ''[])",
+      "IndentedOperation": "            TableCtor: RelLogOp DependOnCols()() 0-1 RequiredCols(0, 1)(''[Value], ''[])",
+      "Level": 3,
+      "RowNumber": 4,
+      "NextSiblingRowNumber": 4,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "''[Value]: ScaLogOp DependOnCols(0)(''[Value]) String DominantValue=NONE",
+      "IndentedOperation": "            ''[Value]: ScaLogOp DependOnCols(0)(''[Value]) String DominantValue=NONE",
+      "Level": 3,
+      "RowNumber": 5,
+      "NextSiblingRowNumber": 5,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "CrossApply: RelLogOp VarName=Combinations DependOnCols()() 0-2 RequiredCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "IndentedOperation": "        CrossApply: RelLogOp VarName=Combinations DependOnCols()() 0-2 RequiredCols(0, 1, 2)(''[Name], ''[], ''[Value])",
+      "Level": 2,
+      "RowNumber": 6,
+      "NextSiblingRowNumber": 13,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "TableVarProxy: RelLogOp DependOnCols()() 0-1 RequiredCols(0, 1)(''[Name], ''[]) RefVarName=Names",
+      "IndentedOperation": "            TableVarProxy: RelLogOp DependOnCols()() 0-1 RequiredCols(0, 1)(''[Name], ''[]) RefVarName=Names",
+      "Level": 3,
+      "RowNumber": 7,
+      "NextSiblingRowNumber": 7,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "GENERATESERIES: RelLogOp DependOnCols(0)(''[Name]) 2-2 RequiredCols(0, 2)(''[Name], ''[Value])",
+      "IndentedOperation": "            GENERATESERIES: RelLogOp DependOnCols(0)(''[Name]) 2-2 RequiredCols(0, 2)(''[Name], ''[Value])",
+      "Level": 3,
+      "RowNumber": 8,
+      "NextSiblingRowNumber": 13,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "Constant: ScaLogOp DependOnCols()() Integer DominantValue=1",
+      "IndentedOperation": "                Constant: ScaLogOp DependOnCols()() Integer DominantValue=1",
+      "Level": 4,
+      "RowNumber": 9,
+      "NextSiblingRowNumber": 9,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "LEN: ScaLogOp DependOnCols(0)(''[Name]) Integer DominantValue=NONE",
+      "IndentedOperation": "                LEN: ScaLogOp DependOnCols(0)(''[Name]) Integer DominantValue=NONE",
+      "Level": 4,
+      "RowNumber": 10,
+      "NextSiblingRowNumber": 12,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "''[Name]: ScaLogOp DependOnCols(0)(''[Name]) String DominantValue=NONE",
+      "IndentedOperation": "                    ''[Name]: ScaLogOp DependOnCols(0)(''[Name]) String DominantValue=NONE",
+      "Level": 5,
+      "RowNumber": 11,
+      "NextSiblingRowNumber": 11,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "Constant: ScaLogOp DependOnCols()() Integer DominantValue=1",
+      "IndentedOperation": "                Constant: ScaLogOp DependOnCols()() Integer DominantValue=1",
+      "Level": 4,
+      "RowNumber": 12,
+      "NextSiblingRowNumber": 12,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "AddColumns: RelLogOp VarName=Result DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "IndentedOperation": "        AddColumns: RelLogOp VarName=Result DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter])",
+      "Level": 2,
+      "RowNumber": 13,
+      "NextSiblingRowNumber": 19,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "TableVarProxy: RelLogOp DependOnCols()() 0-2 RequiredCols(0, 1, 2)(''[Name], ''[], ''[Value]) RefVarName=Combinations",
+      "IndentedOperation": "            TableVarProxy: RelLogOp DependOnCols()() 0-2 RequiredCols(0, 1, 2)(''[Name], ''[], ''[Value]) RefVarName=Combinations",
+      "Level": 3,
+      "RowNumber": 14,
+      "NextSiblingRowNumber": 14,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "MID: ScaLogOp DependOnCols(0, 2)(''[Name], ''[Value]) String DominantValue=NONE",
+      "IndentedOperation": "            MID: ScaLogOp DependOnCols(0, 2)(''[Name], ''[Value]) String DominantValue=NONE",
+      "Level": 3,
+      "RowNumber": 15,
+      "NextSiblingRowNumber": 19,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "''[Name]: ScaLogOp DependOnCols(0)(''[Name]) String DominantValue=NONE",
+      "IndentedOperation": "                ''[Name]: ScaLogOp DependOnCols(0)(''[Name]) String DominantValue=NONE",
+      "Level": 4,
+      "RowNumber": 16,
+      "NextSiblingRowNumber": 16,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "''[Value]: ScaLogOp DependOnCols(2)(''[Value]) Integer DominantValue=NONE",
+      "IndentedOperation": "                ''[Value]: ScaLogOp DependOnCols(2)(''[Value]) Integer DominantValue=NONE",
+      "Level": 4,
+      "RowNumber": 17,
+      "NextSiblingRowNumber": 17,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "Constant: ScaLogOp DependOnCols()() Integer DominantValue=1",
+      "IndentedOperation": "                Constant: ScaLogOp DependOnCols()() Integer DominantValue=1",
+      "Level": 4,
+      "RowNumber": 18,
+      "NextSiblingRowNumber": 18,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "TableVarProxy: RelLogOp DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter]) RefVarName=Result",
+      "IndentedOperation": "        TableVarProxy: RelLogOp DependOnCols()() 0-3 RequiredCols(0, 1, 2, 3)(''[Name], ''[], ''[Value], ''[Letter]) RefVarName=Result",
+      "Level": 2,
+      "RowNumber": 19,
+      "NextSiblingRowNumber": 19,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "''[Name]: ScaLogOp DependOnCols(0)(''[Name]) String DominantValue=NONE",
+      "IndentedOperation": "    ''[Name]: ScaLogOp DependOnCols(0)(''[Name]) String DominantValue=NONE",
+      "Level": 1,
+      "RowNumber": 20,
+      "NextSiblingRowNumber": 20,
+      "HighlightRow": false
+    },
+    {
+      "Operation": "''[Value]: ScaLogOp DependOnCols(2)(''[Value]) Integer DominantValue=NONE",
+      "IndentedOperation": "    ''[Value]: ScaLogOp DependOnCols(2)(''[Value]) Integer DominantValue=NONE",
+      "Level": 1,
+      "RowNumber": 21,
+      "NextSiblingRowNumber": 22,
+      "HighlightRow": false
+    }
+  ],
+  "ActivityID": "C7AD545F-82C7-40BA-BA66-2B3FC03CF326",
+  "CommandText": "EVALUATE\nVAR Names =\n    SELECTCOLUMNS (\n        { \"Praveen\", \"Singh\" },\n        \"Name\", [Value]\n    )\n\nVAR Combinations =\n    GENERATE (\n        Names,\n        GENERATESERIES ( 1, LEN ( [Name] ) )\n    )\n\nVAR Result =\n    ADDCOLUMNS (\n        Combinations,\n        \"Letter\", MID ( [Name], [Value], 1 )\n    )\n\nRETURN\n    Result\nORDER BY\n    [Name], [Value]",
+  "Parameters": null,
+  "StartDatetime": "2024-06-26T00:23:15.306667+05:30"
+}

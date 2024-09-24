@@ -1,0 +1,7 @@
+﻿EVALUATE
+ADDCOLUMNS (
+    'Product',
+    "SalesAmount", CALCULATE ( SUMX ( Sales, Sales[Quantity] * Sales[Net Price] ) ),
+    "SalesMeasure", [SalesAmountMeasure],
+    "Profit", CALCULATE(SUMX(Sales,Sales[Net Price]-Sales[Unit Cost]))
+)

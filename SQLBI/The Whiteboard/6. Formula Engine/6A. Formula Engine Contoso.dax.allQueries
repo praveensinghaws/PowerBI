@@ -1,0 +1,32 @@
+[
+  {
+    "Duration": 2,
+    "Query": "EVALUATE\nSELECTCOLUMNS(\nDISTINCT('Product'[Color]),\n\"Color\", UPPER('Product'[Color]))",
+    "StartTime": "2024-06-26T00:31:42.536667+05:30",
+    "EndTime": "0001-01-01T00:00:00",
+    "Username": "win11\\praveen",
+    "DatabaseName": "The Whiteboard",
+    "QueryType": "DAX",
+    "RequestID": "AF8AAA75-3801-4486-9FBE-CE74F86EC17B",
+    "AggregationMatchCount": 0,
+    "AggregationMissCount": 0,
+    "RequestProperties": "<PropertyList xmlns=\"urn:schemas-microsoft-com:xml-analysis\">\n          <DbpropMsmdMDXCompatibility>3</DbpropMsmdMDXCompatibility>\n          <SspropInitAppName>DAX Studio (Power BI) - c01246d6-969c-40f5-974b-b81431eefc55</SspropInitAppName>\n          <ShowHiddenCubes>true</ShowHiddenCubes>\n          <LocaleIdentifier>16393</LocaleIdentifier>\n          <ClientProcessID>6712</ClientProcessID>\n          <Format>Tabular</Format>\n          <Content>SchemaData</Content>\n          <DbpropMsmdActivityID>d62c2d2a-9255-4bcc-a1eb-110aee6a5809</DbpropMsmdActivityID>\n          <DbpropMsmdCurrentActivityID>d62c2d2a-9255-4bcc-a1eb-110aee6a5809</DbpropMsmdCurrentActivityID>\n          <DbpropMsmdRequestID>af8aaa75-3801-4486-9fbe-ce74f86ec17b</DbpropMsmdRequestID>\n        </PropertyList>",
+    "RequestParameters": null,
+    "ActivityID": "D62C2D2A-9255-4BCC-A1EB-110AEE6A5809"
+  },
+  {
+    "Duration": 2,
+    "Query": "EVALUATE\nSELECTCOLUMNS(\nDISTINCT('Product'[Color]),\n\"Color\", UPPER('Product'[Color]))",
+    "StartTime": "2024-06-26T00:29:59.34+05:30",
+    "EndTime": "0001-01-01T00:00:00",
+    "Username": "win11\\praveen",
+    "DatabaseName": "The Whiteboard",
+    "QueryType": "DAX",
+    "RequestID": "F7F843DB-F39C-4D79-B938-A000481B1E49",
+    "AggregationMatchCount": 0,
+    "AggregationMissCount": 0,
+    "RequestProperties": "<PropertyList xmlns=\"urn:schemas-microsoft-com:xml-analysis\">\n          <DbpropMsmdMDXCompatibility>3</DbpropMsmdMDXCompatibility>\n          <SspropInitAppName>DAX Studio (Power BI) - c01246d6-969c-40f5-974b-b81431eefc55</SspropInitAppName>\n          <ShowHiddenCubes>true</ShowHiddenCubes>\n          <LocaleIdentifier>16393</LocaleIdentifier>\n          <ClientProcessID>6712</ClientProcessID>\n          <Format>Tabular</Format>\n          <Content>SchemaData</Content>\n          <DbpropMsmdActivityID>d62c2d2a-9255-4bcc-a1eb-110aee6a5809</DbpropMsmdActivityID>\n          <DbpropMsmdCurrentActivityID>d62c2d2a-9255-4bcc-a1eb-110aee6a5809</DbpropMsmdCurrentActivityID>\n          <DbpropMsmdRequestID>f7f843db-f39c-4d79-b938-a000481b1e49</DbpropMsmdRequestID>\n        </PropertyList>",
+    "RequestParameters": null,
+    "ActivityID": "D62C2D2A-9255-4BCC-A1EB-110AEE6A5809"
+  }
+]

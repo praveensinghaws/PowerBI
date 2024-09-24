@@ -1,0 +1,6 @@
+﻿EVALUATE
+ROW (
+    "SalesAmount", [SalesAmount],
+    "Avg Sales", AVERAGEX ( Sales, Sales[Quantity] * Sales[Net Price] ),
+    "
+)

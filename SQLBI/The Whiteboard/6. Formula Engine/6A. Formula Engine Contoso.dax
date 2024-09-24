@@ -1,0 +1,6 @@
+﻿-- Formula Engine Contoso
+EVALUATE
+SELECTCOLUMNS (
+    DISTINCT ( 'Product'[Color] ),
+    "Color", UPPER ( 'Product'[Color] )
+)

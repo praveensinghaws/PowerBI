@@ -1,0 +1,116 @@
+****************
+ DAX Functions
+****************
+	1. Text/String Functions
+	*************************
+		A. DAX Operations
+		-----------------
+		   > Arithmetical Operators 1:01:26 
+			· Add(+)
+			· Substract(-)
+			· Multiply(·)
+			· Division(/)
+		   > Comparison Operators 1:06:46
+			· Equal To (=)
+			· Greater Than (>)
+			· Greater Than or Equals To (>=)
+			. Less Than (<)
+			. Less Than or Equals To ( <= )
+			· Not Equal To (<>)
+		   > Concatenation Operators 1:12:46
+			. Apmersand(&)
+
+		   > Logical Operators 1:16:26
+
+			. && (And) - Double Ampersand Symbol
+			. || (Or) - Double Pipe Symbol
+			· IN {}
+	
+		B. Text/String Functions 1:26:16
+		--------------------------------
+
+			· Len()
+			· Concatenate()
+			· Left()
+			· Right()
+			· Mid()
+  			   · Similar to substring()
+			· Upper()
+			· Lower()
+			· Trim()
+			· Substitute()
+			· Replace()
+			· Blank()
+
+	2. Logical Functions 2:03:16
+	****************************
+		> IF()
+		> IF..ELSE()
+		> Nested IF()
+		> True() and False()
+		> Switch()
+		> IFError()
+
+	3. Date and Time Functions 2:56:23
+	**********************************
+		· Year()
+		· Quarter()
+		· Month()
+		· Week()
+		· Day()
+		· EOMONTH()
+		· DateDiff()
+
+	· Calendar()
+		· CALENDAR(Date(2015,01,01),
+			Date(2020,12,31))
+	· CalendarAuto()
+		· DimTime = CALENDARAUTO()
+		· Date()
+		· FORMAT()
+		· Today()
+		· Now()
+
+	4. Math and Statistical Functions 
+	*********************************
+	    A. DAX Math Functions 4:03:24
+	    -----------------------------
+		· INT()
+		· Currency()
+		· Round()
+		· RoundUp()
+		· RoundDown()
+		· Divide ()
+		· Even()
+		· Odd ()
+		· Power()
+		· Sqrt()
+		· Factorial()
+		· Sign()
+
+	   B. DAX Statistical Functions 4:26:15
+	   ------------------------------------
+		· SUM()
+		· SUMx(Table, Expression)
+		· MIN()
+		· MINx()
+		· MAX()
+		· MAXx()
+		· COUNT()
+		· COUNTx()
+		· AVG()
+		· AVGx()
+		· COUNTROWS()
+		. Count of rows in a table
+		· COUNTBLANK()
+		. Get the count of blank values in a column
+		· RANKx()
+		· Summarize()
+
+	5. Filter Function
+	******************
+
+
+
+	6. Time Intelligence Functions
+	******************************

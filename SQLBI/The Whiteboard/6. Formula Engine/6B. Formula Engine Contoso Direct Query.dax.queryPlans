@@ -1,0 +1,9 @@
+{
+  "FileFormatVersion": 3,
+  "PhysicalQueryPlanRows": [],
+  "LogicalQueryPlanRows": [],
+  "ActivityID": "91B3A999-AAB8-42D7-9FB0-00578C9801B6",
+  "CommandText": "DEFINE\n    COLUMN 'Product'[UpperColor] =\n        UPPER ( 'Product'[Color] )\n\nEVALUATE\nDISTINCT ( 'Product'[UpperColor] )",
+  "Parameters": null,
+  "StartDatetime": "2024-06-26T00:36:37.733333+05:30"
+}

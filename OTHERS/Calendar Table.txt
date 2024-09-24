@@ -1,0 +1,65 @@
+-- SQLBI
+Date = 
+VAR MinYear = YEAR ( MIN ( Sales[Order Date] ) )
+VAR MaxYear = YEAR ( MAX ( Sales[Order Date] ) )
+RETURN
+ADDCOLUMNS ( 
+    FILTER ( 
+        CALENDARAUTO( ), 
+        AND ( YEAR ( [Date] ) >= MinYear, YEAR ( [Date] ) <= MaxYear )
+    ),
+    "Calendar Year", "CY " & YEAR ( [Date] ),
+    "Month Name", FORMAT ( [Date], "mmmm" ),
+    "Month Number", MONTH ( [Date] ),
+	"Weekday", FORMAT ( [Date], "dddd" ),
+    "Weekday number", WEEKDAY( [Date] ),
+    "Quarter", "Q" & TRUNC ( ( MONTH ( [Date] ) - 1 ) / 12 ) + 1
+) 
+
+
+Calendar_Table =
+VAR mindate = MIN(Sales[Order Date])
+VAR maxdate = MAX(Sales[Order Date])
+RETURN
+ADDCOLUMNS(
+    CALENDAR(mindate, maxdate),
+    "DateKey", FORMAT([Date], "YYYYMMDD"),
+    "Year", YEAR([Date]),
+    "Quarter", QUARTER([Date]),
+    "QuarterName", "Q" & QUARTER([Date]),
+    "Month", MONTH([Date]),
+    "MonthName", FORMAT([Date], "MMM"),
+    "WeekNumber", WEEKNUM([Date]),
+    "WeekdayNumber", WEEKDAY([Date]),
+    "Day", DAY([Date]),
+    "DayName", FORMAT([Date], "dddd")
+)
+
+Fiscal_Calendar_Table = 
+ADDCOLUMNS(
+    CALENDARAUTO(3),
+    "DateKey", FORMAT([Date], "YYYYMMDD"),
+    "FinancialYear", 
+    VAR Check = MONTH([Date]) >= 4
+    VAR CY = RIGHT(YEAR([Date]),2)
+    VAR NY = RIGHT(YEAR([Date]) + 1, 2)
+    VAR PY = RIGHT(YEAR([Date]) - 1, 2)
+    RETURN IF(Check, CY & "-" & NY, PY & "-" & CY),
+    "Qtr", FORMAT(EDATE([Date],-3),"\QQ"),
+    "MonthSort", MONTH(EDATE([Date],-3)),
+    "Month", FORMAT([Date], "MMM")
+)
+
+
+Calendar_Auto_Table =
+ADDCOLUMNS (
+    CALENDARAUTO (),
+    "YEAR", YEAR ( [Date] ),
+    "QTR", QUARTER ( [Date] ),
+    "QTRNAME", "Q" & QUARTER ( [Date] ),
+    "MONTH", MONTH ( [Date] ),
+    "MONTHNAME", FORMAT ( [Date], "MMM" ),
+    "WEEKNUMBER", WEEKNUM ( [Date] ),
+    "DAYNAME", FORMAT ( [Date], "DDDD" ),
+    "DAY", DAY ( [Date] )
+)

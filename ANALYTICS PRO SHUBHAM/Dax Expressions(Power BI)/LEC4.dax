@@ -1,0 +1,26 @@
+﻿EVALUATE
+ROW(
+    "MINX",
+        MINX(
+            Sales_Data,
+            Sales_Data[Sales_Quantity] * Sales_Data[PerUnit Price]
+        ),
+    "MAXX",
+        MAXX(
+            Sales_Data,
+            Sales_Data[Sales_Quantity] * Sales_Data[PerUnit Price]
+        ),
+    "COUNTX",
+        COUNTX(
+            Sales_Data,
+            Sales_Data[Sales_Quantity] * Sales_Data[PerUnit Price]
+        ),
+    "COUNTROWS", COUNTROWS( Sales_Data )
+)
+
+EVALUATE
+SUMMARIZE(
+    Customer_Lookup,
+    Customer_Lookup[Customer_Name],
+    "COUNTROWS", COUNTROWS( Sales_Data )
+)

@@ -1,0 +1,23 @@
+﻿EVALUATE
+VAR Names =
+    SELECTCOLUMNS (
+        { "Praveen", "Singh" },
+        "Name", [Value]
+    )
+
+VAR Combinations =
+    GENERATE (
+        Names,
+        GENERATESERIES ( 1, LEN ( [Name] ) )
+    )
+
+VAR Result =
+    ADDCOLUMNS (
+        Combinations,
+        "Letter", MID ( [Name], [Value], 1 )
+    )
+
+RETURN
+    Result
+ORDER BY
+    [Name], [Value]

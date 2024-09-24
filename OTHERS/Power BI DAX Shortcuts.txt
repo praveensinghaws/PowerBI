@@ -1,0 +1,13 @@
+### Power BI DAX Shortcuts
+
+1. **Select and Rename Multiple Words:** `Ctrl + Shift + L`
+   
+2. **Select Line:** `Ctrl + L`
+
+3. **Duplicate and Move Code:**
+   - Duplicate Code Down: `Alt + Shift + Down Arrow`
+   - Duplicate Code Up: `Alt + Shift + Up Arrow`
+   - Move Code Up: `Alt + Up Arrow`
+   - Move Code Down: `Alt + Down Arrow`
+
+4. **Show Intellisense:** `Ctrl + Shift + Space`

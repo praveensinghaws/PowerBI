@@ -1,0 +1,8 @@
+# Power BI files
+# *.pbix
+
+# Power BI temporary files
+*.pbit/
+
+# Power BI analysis services connection file
+*.bim

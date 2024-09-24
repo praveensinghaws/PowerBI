@@ -1,0 +1,9 @@
+﻿-- Formula Engine Contoso Direct Query
+
+DEFINE
+    COLUMN 'Product'[UpperColor] =
+        UPPER ( 'Product'[Color] )
+
+EVALUATE
+DISTINCT ( 'Product'[UpperColor] )
+

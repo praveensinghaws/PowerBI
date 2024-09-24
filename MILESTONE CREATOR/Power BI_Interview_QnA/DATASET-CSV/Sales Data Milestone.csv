@@ -1,0 +1,702 @@
+Date,State,Sales
+1/1/2020,Washington,12.624
+1/2/2021,Texas,221.98
+1/3/2022,Oklahoma,341.96
+1/1/2022,Washington,48.712
+1/2/2022,Washington,17.94
+1/3/2022,Washington,242.94
+1/4/2022,Texas,12.624
+1/5/2022,Oklahoma,221.98
+1/6/2022,Oklahoma,341.96
+1/7/2022,Pennsylvania,18.704
+1/8/2022,Mississippi,86.45
+1/9/2022,California,279.456
+1/10/2022,California,238
+1/11/2022,California,49.408
+1/12/2022,New York,247.84
+1/13/2022,New York,9.912
+1/14/2022,New York,34.77
+1/15/2022,New York,18.9
+1/16/2022,California,323.1
+1/17/2022,California,668.16
+1/18/2022,North Carolina,695.7
+1/19/2022,North Carolina,15.66
+1/20/2022,North Carolina,28.854
+1/21/2022,Virginia,31.4
+1/22/2022,Texas,1439.982
+1/23/2022,Texas,36.288
+1/24/2022,California,171.288
+1/25/2022,New York,65.78
+1/26/2022,Oregon,88.074
+1/27/2022,California,477.666
+1/28/2022,New York,6.79
+1/29/2022,New York,24.56
+1/30/2022,New York,3.048
+1/31/2022,New York,49.12
+2/1/2022,New York,4355.168
+2/2/2022,New Hampshire,27.93
+2/3/2022,Virginia,127.88
+2/4/2022,Virginia,160.32
+2/5/2022,Virginia,46
+2/6/2022,Pennsylvania,20.736
+2/7/2022,California,79.99
+2/8/2022,Washington,18.54
+2/9/2022,Washington,2036.86
+2/10/2022,Washington,449.568
+2/11/2022,Washington,108.96
+2/12/2022,Indiana,4.41
+2/13/2022,Indiana,167.94
+2/14/2022,Indiana,67.8
+2/15/2022,New York,841.568
+2/16/2022,Georgia,12.84
+2/17/2022,Nevada,196.45
+2/18/2022,California,5.22
+2/19/2022,Tennessee,314.352
+2/20/2022,Tennessee,27.888
+2/21/2022,Pennsylvania,8.595
+2/22/2022,Pennsylvania,190.896
+2/23/2022,Ohio,3.008
+2/24/2022,Texas,51.84
+2/25/2022,Texas,165.6
+2/26/2022,Rhode Island,240.744
+2/27/2022,Rhode Island,35
+2/28/2022,Rhode Island,210.68
+3/1/2022,Rhode Island,637.896
+3/2/2022,Rhode Island,43.44
+3/3/2022,Rhode Island,2.22
+3/4/2022,California,231.72
+3/5/2022,California,17.9
+3/6/2022,California,12.48
+3/7/2022,Virginia,34.65
+3/8/2022,Missouri,17.22
+3/9/2022,Missouri,1024.38
+3/10/2022,Missouri,26.22
+3/11/2022,Missouri,17.34
+3/12/2022,Missouri,94.2
+3/13/2022,Missouri,28.4
+3/14/2022,Pennsylvania,71.976
+3/15/2022,Pennsylvania,22.512
+3/16/2022,Pennsylvania,3.444
+3/17/2022,Pennsylvania,538.194
+3/18/2022,Pennsylvania,47.984
+3/19/2022,New York,36.56
+3/20/2022,New York,186.144
+3/21/2022,New York,353.568
+3/22/2022,Illinois,6
+3/23/2022,Illinois,1.908
+3/24/2022,Texas,18.936
+3/25/2022,Texas,12.672
+3/26/2022,Texas,5.04
+3/27/2022,California,13.97
+3/28/2022,New York,97.44
+3/29/2022,New York,3.984
+3/30/2022,New York,13.04
+3/31/2022,New York,579.528
+4/1/2022,Arizona,393.165
+4/2/2022,Kentucky,821.88
+4/3/2022,Kentucky,21.96
+4/4/2022,Texas,470.376
+4/5/2022,Indiana,3.69
+4/6/2022,Indiana,1103.97
+4/7/2022,Oregon,344.704
+4/8/2022,New York,117.96
+4/9/2022,Arizona,12.624
+4/10/2022,Arizona,89.584
+4/11/2022,Arizona,471.92
+4/12/2022,Arizona,18.18
+4/13/2022,Michigan,9892.74
+4/14/2022,Texas,23.64
+4/15/2022,Texas,84.784
+4/16/2022,Texas,64.96
+4/17/2022,Texas,32.06
+4/18/2022,Texas,177.648
+4/19/2022,Texas,287.91
+4/20/2022,Illinois,39.816
+4/21/2022,Arizona,259.136
+4/22/2022,California,244.55
+4/23/2022,California,195.76
+4/24/2022,Oregon,45.24
+4/25/2022,Oregon,18.688
+4/26/2022,Oregon,11.648
+4/27/2022,Oregon,112.776
+4/28/2022,Oregon,377.45
+4/29/2022,Oregon,15.936
+4/30/2022,Oregon,28.68
+5/1/2022,Texas,5.248
+5/2/2022,Kentucky,102.93
+5/3/2022,Kentucky,98.16
+5/4/2022,Texas,163.96
+5/5/2022,Texas,5.232
+5/6/2022,Illinois,50.12
+5/7/2022,New York,41.28
+5/8/2022,New York,13.36
+5/9/2022,Washington,4.18
+5/10/2022,New York,91.96
+5/11/2022,Texas,16.896
+5/12/2022,Texas,6.672
+5/13/2022,Texas,99.136
+5/14/2022,Texas,15.992
+5/15/2022,Oklahoma,14.94
+5/16/2022,Texas,15.552
+5/17/2022,New York,59.52
+5/18/2022,New York,479.97
+5/19/2022,New York,18.62
+5/20/2022,New York,49.632
+5/21/2022,New York,97.82
+5/22/2022,California,166.24
+5/23/2022,California,33.4
+5/24/2022,Ohio,14.592
+5/25/2022,Ohio,89.856
+5/26/2022,Ohio,13.872
+5/27/2022,Washington,24.816
+5/28/2022,Washington,14.976
+5/29/2022,California,20.96
+5/30/2022,California,88.752
+5/31/2022,California,304.23
+6/1/2022,Illinois,37.296
+6/2/2022,Tennessee,163.96
+6/3/2022,Colorado,46.688
+6/4/2022,California,94.2
+6/5/2022,Texas,600.558
+6/6/2022,Montana,2999.95
+6/7/2022,Montana,51.45
+6/8/2022,Montana,11.96
+6/9/2022,Montana,1126.02
+6/10/2022,New York,15.48
+6/11/2022,Pennsylvania,51.072
+6/12/2022,New York,163.96
+6/13/2022,Connecticut,19.44
+6/14/2022,Connecticut,897.15
+6/15/2022,California,163.96
+6/16/2022,Pennsylvania,5.88
+6/17/2022,Florida,254.058
+6/18/2022,Florida,194.528
+6/19/2022,Florida,961.48
+6/20/2022,Illinois,16.03
+6/21/2022,Pennsylvania,99.372
+6/22/2022,Pennsylvania,33.568
+6/23/2022,New York,24.672
+6/24/2022,New York,3.744
+6/25/2022,California,79.9
+6/26/2022,Washington,1003.62
+6/27/2022,Tennessee,16.496
+6/28/2022,California,575.92
+6/29/2022,California,30.4
+6/30/2022,California,171.2
+7/1/2022,California,3.36
+7/2/2022,New York,21.36
+7/3/2022,New York,6.688
+7/4/2022,New York,773.94
+7/5/2022,Texas,195.96
+7/6/2022,Kentucky,348.56
+7/7/2022,Kentucky,1577.94
+7/8/2022,New York,26.8
+7/9/2022,Alabama,275.97
+7/10/2022,Alabama,1394.95
+7/11/2022,Alabama,545.88
+7/12/2022,Utah,10.776
+7/13/2022,Utah,11.784
+7/14/2022,Utah,164.88
+7/15/2022,Utah,1292.94
+7/16/2022,Utah,25.584
+7/17/2022,Utah,261.74
+7/18/2022,Utah,14.4
+7/19/2022,California,69.48
+7/20/2022,Colorado,165.6
+7/21/2022,Florida,142.776
+7/22/2022,Florida,45.696
+7/23/2022,Florida,7.218
+7/24/2022,Florida,43.188
+7/25/2022,Florida,131.904
+7/26/2022,Ohio,17.92
+7/27/2022,Ohio,41.256
+7/28/2022,California,60.81
+7/29/2022,Virginia,5.56
+7/30/2022,California,7.64
+7/31/2022,Pennsylvania,33.528
+8/1/2022,Pennsylvania,36.744
+8/2/2022,Pennsylvania,10.368
+8/3/2022,Ohio,2.97
+8/4/2022,Ohio,27.44
+8/5/2022,Texas,13.616
+8/6/2022,New Mexico,16.68
+8/7/2022,New Mexico,19.44
+8/8/2022,New Mexico,192.16
+8/9/2022,Pennsylvania,16.448
+8/10/2022,Pennsylvania,36.784
+8/11/2022,Mississippi,18.92
+8/12/2022,Mississippi,15.42
+8/13/2022,California,479.984
+8/14/2022,Washington,17.05
+8/15/2022,New York,37.94
+8/16/2022,California,19.68
+8/17/2022,Utah,55.5
+8/18/2022,Pennsylvania,15.008
+8/19/2022,Nebraska,40.74
+8/20/2022,Nebraska,14.4
+8/21/2022,Nebraska,149.95
+8/22/2022,Nebraska,16.9
+8/23/2022,Nebraska,17.61
+8/24/2022,Nebraska,378
+8/25/2022,Nebraska,17.64
+8/26/2022,Nebraska,373.08
+8/27/2022,Nebraska,1336.44
+8/28/2022,Nebraska,29.97
+8/29/2022,New York,99.98
+8/30/2022,Massachusetts,37.68
+8/31/2022,California,50.96
+9/1/2022,California,49.536
+9/2/2022,Washington,209.88
+9/3/2022,Pennsylvania,23.988
+9/4/2022,Illinois,116.312
+9/5/2022,Texas,1.964
+9/6/2022,Texas,82.656
+9/7/2022,Indiana,2678.94
+9/8/2022,California,230.28
+9/9/2022,California,18.288
+9/10/2022,California,5.96
+9/11/2022,Massachusetts,81.94
+9/12/2022,Nevada,31.08
+9/13/2022,Minnesota,362.94
+9/14/2022,Minnesota,11.54
+9/15/2022,California,26.96
+9/16/2022,California,673.568
+9/17/2022,California,52.98
+9/18/2022,Texas,3930.072
+9/19/2022,Texas,2.304
+9/20/2022,Texas,431.976
+9/21/2022,Texas,41.72
+9/22/2022,New York,14.94
+9/23/2022,New York,14.56
+9/24/2022,California,95.84
+9/25/2022,California,12.96
+9/26/2022,Oklahoma,81.54
+9/27/2022,Oklahoma,167.28
+9/28/2022,Texas,25.92
+9/29/2022,Texas,6.33
+9/30/2022,Texas,75.88
+10/1/2022,Arizona,182.55
+10/2/2022,North Carolina,12.672
+10/3/2022,Massachusetts,14.88
+10/4/2022,Texas,85.2
+10/5/2022,Pennsylvania,251.964
+10/6/2022,Pennsylvania,523.764
+10/7/2022,Texas,179.886
+10/8/2022,Texas,37.224
+10/9/2022,Texas,20.016
+10/10/2022,California,9.024
+10/11/2022,California,69.456
+10/12/2022,California,10.86
+10/13/2022,California,79.47
+10/14/2022,California,10.08
+10/15/2022,Nebraska,15.36
+10/16/2022,California,192.72
+10/17/2022,California,239.97
+10/18/2022,Ohio,13.872
+10/19/2022,Ohio,115.96
+10/20/2022,Arizona,16.768
+10/21/2022,Nebraska,28.4
+10/22/2022,Nebraska,149.97
+10/23/2022,California,16.52
+10/24/2022,Oregon,5.248
+10/25/2022,Georgia,499.98
+10/26/2022,Georgia,5.28
+10/27/2022,Georgia,8.26
+10/28/2022,California,34.272
+10/29/2022,Tennessee,84.96
+10/30/2022,New York,14.952
+10/31/2022,New York,17.94
+11/1/2022,New York,116.98
+11/2/2022,Rhode Island,16.9
+11/3/2022,Rhode Island,39.96
+11/4/2022,Ohio,15.696
+11/5/2022,Ohio,2.628
+11/6/2022,Ohio,14.427
+11/7/2022,Tennessee,4.704
+11/8/2022,New York,14.4
+11/9/2022,California,19.76
+11/10/2022,Virginia,58.05
+11/11/2022,Virginia,71.28
+11/12/2022,Massachusetts,1488.424
+11/13/2022,New York,97.82
+11/14/2022,New York,103.12
+11/15/2022,California,143.432
+11/16/2022,California,122.352
+11/17/2022,Mississippi,239.7
+11/18/2022,Michigan,41.28
+11/19/2022,California,7.712
+11/20/2022,California,698.352
+11/21/2022,Texas,127.92
+11/22/2022,Texas,34.24
+11/23/2022,Pennsylvania,57.576
+11/24/2022,California,11.56
+11/25/2022,California,33.52
+11/26/2022,California,9.94
+11/27/2022,California,11.16
+11/28/2022,California,896.328
+11/29/2022,California,189
+11/30/2022,Connecticut,11.12
+12/1/2022,Florida,3.444
+12/2/2022,Ohio,5.742
+12/3/2022,Minnesota,1793.98
+12/4/2022,New York,52.272
+12/5/2022,New York,17.94
+12/6/2022,Louisiana,1665.62
+12/7/2022,Washington,1219.96
+12/8/2022,Florida,7.506
+12/9/2022,Florida,16.56
+12/10/2022,Arizona,742.336
+12/11/2022,Florida,11.672
+12/12/2022,New York,539.97
+12/13/2022,New York,22.58
+12/14/2022,Texas,398.4
+12/15/2022,Texas,7.056
+12/16/2022,Texas,1352.3976
+12/17/2022,California,71.088
+12/18/2022,Tennessee,88.96
+12/19/2022,Alabama,14.94
+12/20/2022,North Carolina,15.552
+12/21/2022,Connecticut,27.46
+12/22/2022,Missouri,21.93
+12/23/2022,Missouri,242.94
+12/24/2022,Missouri,7.64
+12/25/2022,Missouri,51.84
+12/26/2022,Missouri,265.17
+12/27/2022,Michigan,11.56
+12/28/2022,Michigan,209.97
+12/29/2022,Michigan,447.84
+12/30/2022,Michigan,479.97
+12/31/2022,Michigan,8.64
+1/1/2023,Pennsylvania,11.648
+1/2/2023,Pennsylvania,18.176
+1/3/2023,Pennsylvania,59.712
+1/4/2023,Pennsylvania,24.84
+1/5/2023,Washington,3.592
+1/6/2023,Arizona,105.584
+1/7/2023,Arizona,68.72
+1/8/2023,Texas,15.552
+1/9/2023,Texas,347.361
+1/10/2023,Texas,10.368
+1/11/2023,Virginia,192.22
+1/12/2023,California,19.296
+1/13/2023,Michigan,418.32
+1/14/2023,Michigan,123.858
+1/15/2023,Florida,173.488
+1/16/2023,Florida,516.96
+1/17/2023,Florida,173.208
+1/18/2023,Florida,4.448
+1/19/2023,Florida,9
+1/20/2023,Florida,42.24
+1/21/2023,Florida,18.264
+1/22/2023,Pennsylvania,3.282
+1/23/2023,Pennsylvania,21.168
+1/24/2023,Pennsylvania,55.188
+1/25/2023,California,58.32
+1/26/2023,Oklahoma,10.8
+1/27/2023,New York,89.97
+1/28/2023,Ohio,26.136
+1/29/2023,Florida,178.384
+1/30/2023,Florida,15.552
+1/31/2023,Texas,559.71
+2/1/2023,New York,70.26
+2/2/2023,New York,90
+2/3/2023,New York,6.096
+2/4/2023,New York,481.176
+2/5/2023,New York,7.24
+2/6/2023,Virginia,46.62
+2/7/2023,New York,17.88
+2/8/2023,Massachusetts,14.94
+2/9/2023,Rhode Island,52.96
+2/10/2023,California,27.24
+2/11/2023,Michigan,5443.96
+2/12/2023,Michigan,302.67
+2/13/2023,Michigan,56.07
+2/14/2023,California,639.968
+2/15/2023,California,52.76
+2/16/2023,California,81.568
+2/17/2023,California,97.184
+2/18/2023,California,24.32
+2/19/2023,California,18.96
+2/20/2023,California,91.96
+2/21/2023,California,33.11
+2/22/2023,California,19.44
+2/23/2023,California,55.48
+2/24/2023,Pennsylvania,8.016
+2/25/2023,California,66.976
+2/26/2023,Georgia,36.4
+2/27/2023,Georgia,51.75
+2/28/2023,Illinois,15.984
+3/1/2023,Washington,63.92
+3/2/2023,Washington,383.96
+3/3/2023,Florida,239.24
+3/4/2023,Washington,35.4
+3/5/2023,Arizona,38.388
+3/6/2023,Arizona,95.994
+3/7/2023,Arizona,239.952
+3/8/2023,Arizona,201.584
+3/9/2023,Arizona,899.136
+3/10/2023,Illinois,14.48
+3/11/2023,California,9.24
+3/12/2023,North Carolina,17.088
+3/13/2023,New York,23.1
+3/14/2023,New York,11.54
+3/15/2023,New York,254.526
+3/16/2023,New York,12.98
+3/17/2023,New York,26.432
+3/18/2023,New York,197.97
+3/19/2023,New York,18.9
+3/20/2023,New York,1282.41
+3/21/2023,New York,4.92
+3/22/2023,New York,238
+3/23/2023,New York,167.97
+3/24/2023,New York,17.12
+3/25/2023,New York,37.93
+3/26/2023,Washington,8.4
+3/27/2023,Washington,71.96
+3/28/2023,Pennsylvania,3.576
+3/29/2023,Pennsylvania,147.184
+3/30/2023,Texas,12.768
+3/31/2023,Texas,7.968
+4/1/2023,Texas,27.968
+4/2/2023,Texas,336.51
+4/3/2023,Florida,4.608
+4/4/2023,Florida,15.528
+4/5/2023,Florida,11.952
+4/6/2023,Pennsylvania,5.68
+4/7/2023,California,129.568
+4/8/2023,California,6.368
+4/9/2023,Kentucky,13.28
+4/10/2023,Washington,269.36
+4/11/2023,Tennessee,4.608
+4/12/2023,Pennsylvania,170.058
+4/13/2023,Pennsylvania,82.782
+4/14/2023,Pennsylvania,853.93
+4/15/2023,California,25.4
+4/16/2023,California,43.96
+4/17/2023,California,1279.165
+4/18/2023,California,27.92
+4/19/2023,Kentucky,42.6
+4/20/2023,Kentucky,113.94
+4/21/2023,Kentucky,129.92
+4/22/2023,Kentucky,5.28
+4/23/2023,California,12.96
+4/24/2023,Massachusetts,271.9
+4/25/2023,Massachusetts,45.84
+4/26/2023,Massachusetts,9.82
+4/27/2023,Oklahoma,541.24
+4/28/2023,Oklahoma,106.32
+4/29/2023,Oklahoma,1323.9
+4/30/2023,Texas,143.728
+5/1/2023,Ohio,183.372
+5/2/2023,Ohio,7.968
+5/3/2023,California,201.584
+5/4/2023,California,84.784
+5/5/2023,Indiana,35.88
+5/6/2023,Texas,35.952
+5/7/2023,Texas,2396.2656
+5/8/2023,Texas,131.136
+5/9/2023,Texas,57.584
+5/10/2023,North Carolina,34.848
+5/11/2023,North Carolina,22
+5/12/2023,North Carolina,4.368
+5/13/2023,Texas,244.006
+5/14/2023,Texas,15.936
+5/15/2023,Georgia,40.29
+5/16/2023,Georgia,38.71
+5/17/2023,Wisconsin,13.48
+5/18/2023,North Carolina,89.568
+5/19/2023,North Carolina,315.776
+5/20/2023,Virginia,49.12
+5/21/2023,New York,70.88
+5/22/2023,Florida,11.76
+5/23/2023,Florida,5.238
+5/24/2023,Florida,4.662
+5/25/2023,Florida,523.92
+5/26/2023,Florida,100.792
+5/27/2023,Florida,146.136
+5/28/2023,California,361.376
+5/29/2023,Virginia,2275.5
+5/30/2023,Virginia,1979.7
+5/31/2023,Virginia,62.1
+6/1/2023,Georgia,17.94
+6/2/2023,Texas,946.344
+6/3/2023,Texas,33.488
+6/4/2023,Texas,23.04
+6/5/2023,Texas,1.362
+6/6/2023,Texas,14.76
+6/7/2023,Michigan,116.4
+6/8/2023,California,87.84
+6/9/2023,California,863.128
+6/10/2023,Virginia,177.68
+6/11/2023,Florida,52.68
+6/12/2023,Florida,11.568
+6/13/2023,Alabama,350.98
+6/14/2023,Alabama,13.08
+6/15/2023,Alabama,900.08
+6/16/2023,California,17.48
+6/17/2023,Rhode Island,49.25
+6/18/2023,Rhode Island,10.16
+6/19/2023,Rhode Island,14.76
+6/20/2023,Rhode Island,34.08
+6/21/2023,Rhode Island,17.67
+6/22/2023,Rhode Island,1604.9
+6/23/2023,Rhode Island,385.686
+6/24/2023,Washington,871.4
+6/25/2023,Illinois,383.84
+6/26/2023,Virginia,101.94
+6/27/2023,Virginia,271.96
+6/28/2023,Virginia,8.8
+6/29/2023,Virginia,19.68
+6/30/2023,Virginia,302.94
+7/1/2023,Virginia,14.94
+7/2/2023,Virginia,231.72
+7/3/2023,North Carolina,13.092
+7/4/2023,Nevada,45.584
+7/5/2023,New York,9.99
+7/6/2023,New York,125.76
+7/7/2023,New York,25.32
+7/8/2023,Alabama,4.98
+7/9/2023,Massachusetts,173.94
+7/10/2023,Massachusetts,14.76
+7/11/2023,Texas,27.168
+7/12/2023,Pennsylvania,25.632
+7/13/2023,New York,58.408
+7/14/2023,New York,79.974
+7/15/2023,Florida,45.568
+7/16/2023,Florida,28.752
+7/17/2023,California,271.96
+7/18/2023,California,18.69
+7/19/2023,California,13.36
+7/20/2023,California,249.584
+7/21/2023,California,13.86
+7/22/2023,California,13.376
+7/23/2023,California,437.472
+7/24/2023,Washington,97.16
+7/25/2023,Illinois,95.984
+7/26/2023,California,55.36
+7/27/2023,Tennessee,3.488
+7/28/2023,Tennessee,143.856
+7/29/2023,New York,166.72
+7/30/2023,New York,24.816
+7/31/2023,New York,124.36
+8/1/2023,New Jersey,2625.12
+8/2/2023,New Jersey,17.94
+8/3/2023,New York,45.96
+8/4/2023,Connecticut,25.3
+8/5/2023,Connecticut,95.94
+8/6/2023,California,5.94
+8/7/2023,Texas,79.96
+8/8/2023,Texas,223.96
+8/9/2023,New York,366.786
+8/10/2023,Texas,4.448
+8/11/2023,Texas,5.184
+8/12/2023,Texas,15.552
+8/13/2023,New York,36.63
+8/14/2023,California,88.776
+8/15/2023,California,64.14
+8/16/2023,California,14.73
+8/17/2023,California,186.54
+8/18/2023,California,557.728
+8/19/2023,California,159.968
+8/20/2023,Illinois,121.536
+8/21/2023,Pennsylvania,5.892
+8/22/2023,Virginia,113.1
+8/23/2023,Illinois,27.396
+8/24/2023,Illinois,13.456
+8/25/2023,Indiana,10.74
+8/26/2023,Virginia,2.89
+8/27/2023,Virginia,51.94
+8/28/2023,Florida,7.434
+8/29/2023,Arizona,307.776
+8/30/2023,Massachusetts,1737.18
+8/31/2023,Massachusetts,704.25
+9/1/2023,Massachusetts,141.76
+9/2/2023,Maryland,3.76
+9/3/2023,Maryland,14.7
+9/4/2023,Maryland,37.2
+9/5/2023,Maryland,89.97
+9/6/2023,Maryland,261.96
+9/7/2023,Maryland,74
+9/8/2023,Ohio,1421.664
+9/9/2023,California,10.86
+9/10/2023,Florida,310.88
+9/11/2023,Florida,191.472
+9/12/2023,Florida,5.248
+9/13/2023,Florida,59.184
+9/14/2023,Washington,109.9
+9/15/2023,California,24.9
+9/16/2023,California,21.12
+9/17/2023,California,767.952
+9/18/2023,California,14.352
+9/19/2023,California,191.976
+9/20/2023,California,274.77
+9/21/2023,California,70.56
+9/22/2023,New York,4.992
+9/23/2023,California,32.4
+9/24/2023,California,57.9
+9/25/2023,California,10.56
+9/26/2023,California,1194.165
+9/27/2023,Virginia,20.7
+9/28/2023,Virginia,11.34
+9/29/2023,Virginia,67.9
+9/30/2023,Virginia,1059.12
+10/1/2023,California,161.28
+10/2/2023,Washington,14.8
+10/3/2023,Washington,302.376
+10/4/2023,Washington,316
+10/5/2023,Texas,347.802
+10/6/2023,California,32.4
+10/7/2023,New York,19.44
+10/8/2023,Ohio,384.592
+10/9/2023,California,3.52
+10/10/2023,California,1626.192
+10/11/2023,Washington,1115.17
+10/12/2023,New York,13.36
+10/13/2023,New York,163.764
+10/14/2023,New York,183.92
+10/15/2023,Texas,21.48
+10/16/2023,Texas,8.784
+10/17/2023,Pennsylvania,10.368
+10/18/2023,Pennsylvania,310.88
+10/19/2023,New Mexico,12.88
+10/20/2023,California,9.4
+10/21/2023,California,74
+10/22/2023,California,201.584
+10/23/2023,Pennsylvania,63.686
+10/24/2023,Virginia,504.9
+10/25/2023,California,67.71
+10/26/2023,California,129.92
+10/27/2023,California,467.46
+10/28/2023,California,61.4
+10/29/2023,California,720.76
+10/30/2023,California,5.184
+10/31/2023,California,14.7
+11/1/2023,Washington,158.13
+11/2/2023,Washington,43.6
+11/3/2023,Arizona,6.368
+11/4/2023,New York,6.68
+11/5/2023,California,88.8
+11/6/2023,California,319.968
+11/7/2023,California,1679.96
+11/8/2023,California,17.12
+11/9/2023,California,19.44
+11/10/2023,Texas,233.058
+11/11/2023,New Jersey,345
+11/12/2023,New Jersey,174.286
+11/13/2023,New Jersey,662.84
+11/14/2023,New Jersey,95.1
+11/15/2023,Texas,233.058
+11/16/2023,California,114.7
+11/17/2023,Virginia,1059.12
+11/18/2023,California,161.28
+11/19/2023,Washington,14.8
+11/20/2023,Washington,302.376
+11/21/2023,Washington,316
+11/22/2023,Texas,347.802
+11/23/2023,California,32.4
+11/24/2023,New York,19.44
+11/25/2023,Ohio,384.592
+11/26/2023,California,3.52
+11/27/2023,California,1626.192
+11/28/2023,Washington,1115.17
+11/29/2023,New York,13.36

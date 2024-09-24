@@ -1,0 +1,8 @@
+﻿EVALUATE
+SELECTCOLUMNS (
+    FILTER (
+        'Product',
+        'Product'[Color] = "Red" && 'Product'[List Price] > 1000
+    ),
+    "Product Code", 'Product'[Product Code]
+)

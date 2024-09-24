@@ -1,0 +1,13 @@
+﻿-- Categorywise Sales 
+
+EVALUATE
+VAR HaircareSales =
+    CALCULATE ( [Total Sales], dimProduct[Product Category] = "Hair Care" )
+VAR MakeupSales =
+    CALCULATE ( [Total Sales], dimProduct[Product Category] = "Makeup" )
+RETURN
+    SUMMARIZE (
+        dimProduct,
+        dimProduct[Product Category],
+        "Sales-Difference Makeup vs Haircare", MakeupSales - HaircareSales
+    )

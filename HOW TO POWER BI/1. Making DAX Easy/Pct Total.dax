@@ -1,0 +1,27 @@
+﻿EVALUATE
+VAR SalesAllCustomers =
+    CALCULATE ( [Total Sales], REMOVEFILTERS ( dimCustomer[Customer Name] ) )
+RETURN
+    SUMMARIZE (
+        dimCustomer,
+        dimCustomer[Customer Name],
+        "TotalSales", [Total Sales],
+        "Sales%ofTotal", DIVIDE ( [Total Sales], SalesAllCustomers )
+    )
+ORDER BY dimCustomer[Customer Name]
+
+-- AnotherWay To Do The Same
+
+EVALUATE
+VAR SalesAllCustomers =
+    CALCULATE ( [Total Sales], REMOVEFILTERS ( dimCustomer[Customer Name] ) )
+VAR SalesPctTotal =
+    SUMMARIZE (
+        dimCustomer,
+        dimCustomer[Customer Name],
+        "TotalSales", [Total Sales],
+        "Sales%ofTotal", DIVIDE ( [Total Sales], SalesAllCustomers )
+    )
+RETURN
+    SalesPctTotal
+ORDER BY dimCustomer[Customer Name]

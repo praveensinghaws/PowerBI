@@ -1,0 +1,10 @@
+﻿EVALUATE
+SUMMARIZE(
+    Product_Lookup,
+    Product_Lookup[Product_Name],
+    "TotalQty",
+    SUMX(
+        RELATEDTABLE(Sales_Data),
+        Sales_Data[Sales_Quantity]
+    )
+)
