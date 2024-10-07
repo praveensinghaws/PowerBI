@@ -2,7 +2,7 @@
 TableName,
 {
 
-{"ColumnName1", ITransformationFunction, DataType},
+{"ColumnName1", TransformationFunction, DataType},
 {"ColumnName2", TransformationFunction, DataType}
 
 }

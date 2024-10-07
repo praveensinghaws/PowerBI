@@ -1,0 +1,32 @@
+// fn_CombineTopNRows
+(InputTable as table, TopNRows as number, optional Delimiter as nullable text) as table =>
+let
+    // Step 1: Set default delimiter as line feed if not provided
+    Delimiter = if Delimiter <> null then Delimiter else "#(lf)",
+
+    // Step 2: Get column names of the input table
+    ColsNames = Table.ColumnNames(InputTable),
+
+    // Step 3: Split the table into two parts: the top N rows and the rest
+    ToTables = Table.SplitAt(InputTable, TopNRows),
+
+    // Step 4: Convert the top N rows to text type for combination
+    ToText = Table.TransformColumnTypes(ToTables{0}, List.Transform(ColsNames, each {_ , type text})),
+
+    // Step 5: Convert the table to a list of rows
+    ToRows = Table.ToRows(ToText),
+
+    // Step 6: Fill any null values in the rows by carrying the last non-null value forward
+    FillRows = List.Transform(ToRows, each List.Accumulate(_, {}, (acc, cur) => acc & {if cur = null then try List.Last(acc) otherwise null else cur})),
+
+    // Step 7: Combine each column's values into a single text string, using the delimiter
+    CombineText = List.Transform(List.Zip(FillRows), each Text.Combine(_, Delimiter)),
+
+    // Step 8: Create a new table using the combined text and the original column names
+    ToTable = Table.FromRows({CombineText}, ColsNames),
+
+    // Step 9: Combine the new table (with the combined top N rows) and the remaining rows
+    Combine = Table.Combine({ToTable, ToTables{1}})
+in
+    // Step 10: Promote the first row of the combined table to be the header
+    Table.PromoteHeaders(Combine)
