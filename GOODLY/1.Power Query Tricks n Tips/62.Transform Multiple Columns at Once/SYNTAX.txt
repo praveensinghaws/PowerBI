@@ -1,0 +1,7 @@
+Table.TransformColumns(
+	Source, 
+	{
+		{"Col1", Text.Lower, type text}, 
+		{"Col2", Text.Lower, type text}
+	}
+)
