@@ -1,3 +1,6 @@
+//D:\GITHUB\PowerBI\GOODLY\1.Power Query Tricks n Tips\70.Remove 'Change Type' Errors in Power Query
+
+
 let
     Source = let
     ChangeTypefx = (Table as table, DataTypes as list) as table => 
