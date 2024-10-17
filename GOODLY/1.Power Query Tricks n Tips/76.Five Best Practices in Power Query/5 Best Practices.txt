@@ -1,0 +1,5 @@
+1.Rename the Steps.
+2.Write Comments for Complex Transformations.
+3.Notice and Omit the Red.
+4.Parameterize and Stage the Queries.
+5.Quick Access Toolbar.
