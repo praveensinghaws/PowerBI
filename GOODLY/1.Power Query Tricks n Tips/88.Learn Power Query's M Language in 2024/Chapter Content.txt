@@ -1,0 +1,5 @@
+1. Master the UI.
+2. Go from small code to big code.
+3. Learn the structure.
+4. Understanding values and functions.
+5. Understand problem solving.
